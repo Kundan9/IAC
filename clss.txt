@@ -1,0 +1,3550 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20181124121929
+Username: DESKTOP-7HIKLEC\VMware
+RunAs User: DESKTOP-7HIKLEC\VMware
+Configuration Name: 
+Machine: DESKTOP-7HIKLEC (Microsoft Windows NT 10.0.16299.0)
+Host Application: C:\Windows\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Process ID: 7812
+PSVersion: 5.1.16299.785
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.16299.785
+BuildVersion: 10.0.16299.785
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Kundan\clss.txt
+PS C:\Windows\system32> $services= Get-Service
+PS C:\Windows\system32> foreach ($service in $services)
+    {
+
+
+    }
+PS C:\Windows\system32> $service.StartType
+Manual
+PS C:\Windows\system32> $services= Get-Service
+foreach ($service in $services)
+    {
+     
+        if($service.StartType -eq "Automatic")
+            {
+
+            Write-Host The service $service.Name is Automatic
+
+            }
+    
+   
+
+    }
+The service AudioEndpointBuilder is Automatic
+The service Audiosrv is Automatic
+The service BFE is Automatic
+The service BITS is Automatic
+The service BrokerInfrastructure is Automatic
+The service CDPSvc is Automatic
+The service CDPUserSvc_1e44aa is Automatic
+The service CoreMessagingRegistrar is Automatic
+The service CryptSvc is Automatic
+The service DcomLaunch is Automatic
+The service DeviceAssociationService is Automatic
+The service Dhcp is Automatic
+The service DiagTrack is Automatic
+The service Dnscache is Automatic
+The service DoSvc is Automatic
+The service DPS is Automatic
+The service DusmSvc is Automatic
+The service EventLog is Automatic
+The service EventSystem is Automatic
+The service FontCache is Automatic
+The service gpsvc is Automatic
+The service gupdate is Automatic
+The service igfxCUIService2.0.0.0 is Automatic
+The service IKEEXT is Automatic
+The service iphlpsvc is Automatic
+The service LanmanServer is Automatic
+The service LanmanWorkstation is Automatic
+The service LSM is Automatic
+The service MapsBroker is Automatic
+The service MpsSvc is Automatic
+The service NlaSvc is Automatic
+The service nsi is Automatic
+The service OneSyncSvc_1e44aa is Automatic
+The service osrss is Automatic
+The service Power is Automatic
+The service ProfSvc is Automatic
+The service RasMan is Automatic
+The service RpcEptMapper is Automatic
+The service RpcSs is Automatic
+The service SamSs is Automatic
+The service Schedule is Automatic
+The service SecurityHealthService is Automatic
+The service sedsvc is Automatic
+The service SENS is Automatic
+The service ShellHWDetection is Automatic
+The service Spooler is Automatic
+The service sppsvc is Automatic
+The service SysMain is Automatic
+The service SystemEventsBroker is Automatic
+The service Themes is Automatic
+The service TrkWks is Automatic
+The service UserManager is Automatic
+The service VMAuthdService is Automatic
+The service VMnetDHCP is Automatic
+The service VMUSBArbService is Automatic
+The service VMware NAT Service is Automatic
+The service VMwareHostd is Automatic
+The service Wcmsvc is Automatic
+The service WinDefend is Automatic
+The service Winmgmt is Automatic
+The service WpnService is Automatic
+The service WpnUserService_1e44aa is Automatic
+The service wscsvc is Automatic
+The service WSearch is Automatic
+PS C:\Windows\system32> $services= Get-Service
+foreach ($service in $services)
+    {
+     
+        if($service.StartType -eq "Automatic")
+
+            {
+
+                Write-Host The service $service.Name is Automatic
+
+            }
+
+                elseif ($service.StartType -eq "Manual")
+
+                    {
+                    
+                        Write-Host The Service $service.Name is Manual
+
+                    }
+                    
+                        else ($service.StartType -eq "Disable")
+
+                            {
+
+                                Write-Host The service $service.Name is Disabled
+                            }
+       
+
+    }
+
+At line:21 char:29
++                         else ($service.StartType -eq "Disable")
++                             ~
+Missing statement block after 'else' keyword.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingStatementBlockAfterElse
+
+PS C:\Windows\system32> $services= Get-Service
+foreach ($service in $services)
+    {
+     
+        if($service.StartType -eq "Automatic")
+
+            {
+
+                Write-Host The service $service.Name is Automatic
+
+            }
+
+                elseif ($service.StartType -eq "Manual")
+
+                    {
+                    
+                        Write-Host The Service $service.Name is Manual
+
+                    }
+                    
+Missing closing '}' in statement block or type definition.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingEndCurlyBrace
+
+PS C:\Windows\system32> $services= Get-Service
+foreach ($service in $services)
+    {
+     
+        if($service.StartType -eq "Automatic")
+
+            {
+
+                Write-Host The service $service.Name is Automatic
+
+            }
+
+                elseif ($service.StartType -eq "Manual")
+
+                    {
+                    
+                        Write-Host The Service $service.Name is Manual
+
+                    }
+                    
+                        else 
+
+                            {
+
+                                Write-Host The service $service.Name is Disabled
+                            }
+                            
+       
+
+    }
+The Service AJRouter is Manual
+The Service ALG is Manual
+The Service AppIDSvc is Manual
+The Service Appinfo is Manual
+The Service AppMgmt is Manual
+The Service AppReadiness is Manual
+The service AppVClient is Disabled
+The Service AppXSvc is Manual
+The Service AssignedAccessManagerSvc is Manual
+The service AudioEndpointBuilder is Automatic
+The service Audiosrv is Automatic
+The Service AxInstSV is Manual
+The Service BDESVC is Manual
+The service BFE is Automatic
+The service BITS is Automatic
+The service BrokerInfrastructure is Automatic
+The Service Browser is Manual
+The Service BthHFSrv is Manual
+The Service bthserv is Manual
+The Service camsvc is Manual
+The service CDPSvc is Automatic
+The service CDPUserSvc_1e44aa is Automatic
+The Service CertPropSvc is Manual
+The Service ClipSVC is Manual
+The Service COMSysApp is Manual
+The service CoreMessagingRegistrar is Automatic
+The Service cphs is Manual
+The service CryptSvc is Automatic
+The Service CscService is Manual
+The service DcomLaunch is Automatic
+The Service defragsvc is Manual
+The service DeviceAssociationService is Automatic
+The Service DeviceInstall is Manual
+The Service DevicesFlowUserSvc_1e44aa is Manual
+The Service DevQueryBroker is Manual
+The service Dhcp is Automatic
+The Service diagnosticshub.standardcollector.service is Manual
+The Service diagsvc is Manual
+The service DiagTrack is Automatic
+The Service DmEnrollmentSvc is Manual
+The Service dmwappushservice is Manual
+The service Dnscache is Automatic
+The service DoSvc is Automatic
+The Service dot3svc is Manual
+The service DPS is Automatic
+The Service DsmSvc is Manual
+The Service DsSvc is Manual
+The service DusmSvc is Automatic
+The Service Eaphost is Manual
+The Service EFS is Manual
+The Service embeddedmode is Manual
+The Service EntAppSvc is Manual
+The service EventLog is Automatic
+The service EventSystem is Automatic
+The Service Fax is Manual
+The Service fdPHost is Manual
+The Service FDResPub is Manual
+The Service fhsvc is Manual
+The service FontCache is Automatic
+The Service FrameServer is Manual
+The service gpsvc is Automatic
+The Service GraphicsPerfSvc is Manual
+The service gupdate is Automatic
+The Service gupdatem is Manual
+The Service hidserv is Manual
+The Service HomeGroupListener is Manual
+The Service HomeGroupProvider is Manual
+The Service HvHost is Manual
+The Service icssvc is Manual
+The service igfxCUIService2.0.0.0 is Automatic
+The service IKEEXT is Automatic
+The Service InstallService is Manual
+The service iphlpsvc is Automatic
+The Service IpxlatCfgSvc is Manual
+The Service irmon is Manual
+The Service KeyIso is Manual
+The Service KtmRm is Manual
+The service LanmanServer is Automatic
+The service LanmanWorkstation is Automatic
+The Service lfsvc is Manual
+The Service LicenseManager is Manual
+The Service lltdsvc is Manual
+The Service lmhosts is Manual
+The service LSM is Automatic
+The service MapsBroker is Automatic
+The Service MessagingService_1e44aa is Manual
+The service MpsSvc is Automatic
+The Service MSDTC is Manual
+The Service MSiSCSI is Manual
+The Service msiserver is Manual
+The Service NaturalAuthentication is Manual
+The Service NcaSvc is Manual
+The Service NcbService is Manual
+The Service NcdAutoSetup is Manual
+The Service Netlogon is Manual
+The Service Netman is Manual
+The Service netprofm is Manual
+The Service NetSetupSvc is Manual
+The service NetTcpPortSharing is Disabled
+The Service NgcCtnrSvc is Manual
+The Service NgcSvc is Manual
+The service NlaSvc is Automatic
+The service nsi is Automatic
+The service OneSyncSvc_1e44aa is Automatic
+The service osrss is Automatic
+The Service p2pimsvc is Manual
+The Service p2psvc is Manual
+The Service PcaSvc is Manual
+The Service PeerDistSvc is Manual
+The Service PerfHost is Manual
+The Service PhoneSvc is Manual
+The Service PimIndexMaintenanceSvc_1e44aa is Manual
+The Service pla is Manual
+The Service PlugPlay is Manual
+The Service PNRPAutoReg is Manual
+The Service PNRPsvc is Manual
+The Service PolicyAgent is Manual
+The service Power is Automatic
+The Service PrintNotify is Manual
+The Service PrintWorkflowUserSvc_1e44aa is Manual
+The service ProfSvc is Automatic
+The Service PushToInstall is Manual
+The Service QWAVE is Manual
+The Service RasAuto is Manual
+The service RasMan is Automatic
+The service RemoteAccess is Disabled
+The service RemoteRegistry is Disabled
+The Service RetailDemo is Manual
+The Service RmSvc is Manual
+The service RpcEptMapper is Automatic
+The Service RpcLocator is Manual
+The service RpcSs is Automatic
+The service SamSs is Automatic
+The service SCardSvr is Disabled
+The Service ScDeviceEnum is Manual
+The service Schedule is Automatic
+The Service SCPolicySvc is Manual
+The Service SDRSVC is Manual
+The Service seclogon is Manual
+The service SecurityHealthService is Automatic
+The service sedsvc is Automatic
+The Service SEMgrSvc is Manual
+The service SENS is Automatic
+The Service Sense is Manual
+The Service SensorDataService is Manual
+The Service SensorService is Manual
+The Service SensrSvc is Manual
+The Service SessionEnv is Manual
+The Service SharedAccess is Manual
+The Service SharedRealitySvc is Manual
+The service ShellHWDetection is Automatic
+The service shpamsvc is Disabled
+The Service smphost is Manual
+The Service SmsRouter is Manual
+The Service SNMPTRAP is Manual
+The Service spectrum is Manual
+The service Spooler is Automatic
+The service sppsvc is Automatic
+The Service SSDPSRV is Manual
+The Service SstpSvc is Manual
+The Service StateRepository is Manual
+The Service stisvc is Manual
+The Service StorSvc is Manual
+The Service svsvc is Manual
+The Service swprv is Manual
+The service SysMain is Automatic
+The service SystemEventsBroker is Automatic
+The Service TabletInputService is Manual
+The Service TapiSrv is Manual
+The Service TermService is Manual
+The service Themes is Automatic
+The Service TieringEngineService is Manual
+The Service tiledatamodelsvc is Manual
+The Service TimeBrokerSvc is Manual
+The Service TokenBroker is Manual
+The service TrkWks is Automatic
+The Service TrustedInstaller is Manual
+The service tzautoupdate is Disabled
+The service UevAgentService is Disabled
+The Service UI0Detect is Manual
+The Service UmRdpService is Manual
+The Service UnistoreSvc_1e44aa is Manual
+The Service upnphost is Manual
+The Service UserDataSvc_1e44aa is Manual
+The service UserManager is Automatic
+The Service UsoSvc is Manual
+The Service VaultSvc is Manual
+The Service vds is Manual
+The service VMAuthdService is Automatic
+The Service vmicguestinterface is Manual
+The Service vmicheartbeat is Manual
+The Service vmickvpexchange is Manual
+The Service vmicrdv is Manual
+The Service vmicshutdown is Manual
+The Service vmictimesync is Manual
+The Service vmicvmsession is Manual
+The Service vmicvss is Manual
+The service VMnetDHCP is Automatic
+The service VMUSBArbService is Automatic
+The service VMware NAT Service is Automatic
+The service VMwareHostd is Automatic
+The Service VSS is Manual
+The Service W32Time is Manual
+The Service WalletService is Manual
+The Service WarpJITSvc is Manual
+The Service wbengine is Manual
+The Service WbioSrvc is Manual
+The service Wcmsvc is Automatic
+The Service wcncsvc is Manual
+The Service WdiServiceHost is Manual
+The Service WdiSystemHost is Manual
+The Service WdNisSvc is Manual
+The Service WebClient is Manual
+The Service Wecsvc is Manual
+The Service WEPHOSTSVC is Manual
+The Service wercplsupport is Manual
+The Service WerSvc is Manual
+The Service WFDSConMgrSvc is Manual
+The Service WiaRpc is Manual
+The service WinDefend is Automatic
+The Service WinHttpAutoProxySvc is Manual
+The service Winmgmt is Automatic
+The Service WinRM is Manual
+The Service wisvc is Manual
+The Service WlanSvc is Manual
+The Service wlidsvc is Manual
+The Service wlpasvc is Manual
+The Service wmiApSrv is Manual
+The Service WMPNetworkSvc is Manual
+The Service workfolderssvc is Manual
+The Service WPDBusEnum is Manual
+The service WpnService is Automatic
+The service WpnUserService_1e44aa is Automatic
+The service wscsvc is Automatic
+The service WSearch is Automatic
+The Service wuauserv is Manual
+The Service WwanSvc is Manual
+The Service xbgm is Manual
+The Service XblAuthManager is Manual
+The Service XblGameSave is Manual
+The Service XboxGipSvc is Manual
+The Service XboxNetApiSvc is Manual
+PS C:\Windows\system32> $services= Get-Service
+foreach ($service in $services)
+    {
+     
+        if($service.StartType -eq "Automatic")
+
+            {
+
+                Write-Host The service $($service.Name) is Automatic
+
+            }
+
+                elseif ($service.StartType -eq "Manual")
+
+                    {
+                    
+                        Write-Host "The Service $($service.Name) is Manual"
+
+                    }
+                    
+                        else 
+
+                            {
+
+                                Write-Host The service $($service.Name) is Disabled
+                            }
+                            
+       
+
+    }
+The Service AJRouter is Manual
+The Service ALG is Manual
+The Service AppIDSvc is Manual
+The Service Appinfo is Manual
+The Service AppMgmt is Manual
+The Service AppReadiness is Manual
+The service AppVClient is Disabled
+The Service AppXSvc is Manual
+The Service AssignedAccessManagerSvc is Manual
+The service AudioEndpointBuilder is Automatic
+The service Audiosrv is Automatic
+The Service AxInstSV is Manual
+The Service BDESVC is Manual
+The service BFE is Automatic
+The service BITS is Automatic
+The service BrokerInfrastructure is Automatic
+The Service Browser is Manual
+The Service BthHFSrv is Manual
+The Service bthserv is Manual
+The Service camsvc is Manual
+The service CDPSvc is Automatic
+The service CDPUserSvc_1e44aa is Automatic
+The Service CertPropSvc is Manual
+The Service ClipSVC is Manual
+The Service COMSysApp is Manual
+The service CoreMessagingRegistrar is Automatic
+The Service cphs is Manual
+The service CryptSvc is Automatic
+The Service CscService is Manual
+The service DcomLaunch is Automatic
+The Service defragsvc is Manual
+The service DeviceAssociationService is Automatic
+The Service DeviceInstall is Manual
+The Service DevicesFlowUserSvc_1e44aa is Manual
+The Service DevQueryBroker is Manual
+The service Dhcp is Automatic
+The Service diagnosticshub.standardcollector.service is Manual
+The Service diagsvc is Manual
+The service DiagTrack is Automatic
+The Service DmEnrollmentSvc is Manual
+The Service dmwappushservice is Manual
+The service Dnscache is Automatic
+The service DoSvc is Automatic
+The Service dot3svc is Manual
+The service DPS is Automatic
+The Service DsmSvc is Manual
+The Service DsSvc is Manual
+The service DusmSvc is Automatic
+The Service Eaphost is Manual
+The Service EFS is Manual
+The Service embeddedmode is Manual
+The Service EntAppSvc is Manual
+The service EventLog is Automatic
+The service EventSystem is Automatic
+The Service Fax is Manual
+The Service fdPHost is Manual
+The Service FDResPub is Manual
+The Service fhsvc is Manual
+The service FontCache is Automatic
+The Service FrameServer is Manual
+The service gpsvc is Automatic
+The Service GraphicsPerfSvc is Manual
+The service gupdate is Automatic
+The Service gupdatem is Manual
+The Service hidserv is Manual
+The Service HomeGroupListener is Manual
+The Service HomeGroupProvider is Manual
+The Service HvHost is Manual
+The Service icssvc is Manual
+The service igfxCUIService2.0.0.0 is Automatic
+The service IKEEXT is Automatic
+The Service InstallService is Manual
+The service iphlpsvc is Automatic
+The Service IpxlatCfgSvc is Manual
+The Service irmon is Manual
+The Service KeyIso is Manual
+The Service KtmRm is Manual
+The service LanmanServer is Automatic
+The service LanmanWorkstation is Automatic
+The Service lfsvc is Manual
+The Service LicenseManager is Manual
+The Service lltdsvc is Manual
+The Service lmhosts is Manual
+The service LSM is Automatic
+The service MapsBroker is Automatic
+The Service MessagingService_1e44aa is Manual
+The service MpsSvc is Automatic
+The Service MSDTC is Manual
+The Service MSiSCSI is Manual
+The Service msiserver is Manual
+The Service NaturalAuthentication is Manual
+The Service NcaSvc is Manual
+The Service NcbService is Manual
+The Service NcdAutoSetup is Manual
+The Service Netlogon is Manual
+The Service Netman is Manual
+The Service netprofm is Manual
+The Service NetSetupSvc is Manual
+The service NetTcpPortSharing is Disabled
+The Service NgcCtnrSvc is Manual
+The Service NgcSvc is Manual
+The service NlaSvc is Automatic
+The service nsi is Automatic
+The service OneSyncSvc_1e44aa is Automatic
+The service osrss is Automatic
+The Service p2pimsvc is Manual
+The Service p2psvc is Manual
+The Service PcaSvc is Manual
+The Service PeerDistSvc is Manual
+The Service PerfHost is Manual
+The Service PhoneSvc is Manual
+The Service PimIndexMaintenanceSvc_1e44aa is Manual
+The Service pla is Manual
+The Service PlugPlay is Manual
+The Service PNRPAutoReg is Manual
+The Service PNRPsvc is Manual
+The Service PolicyAgent is Manual
+The service Power is Automatic
+The Service PrintNotify is Manual
+The Service PrintWorkflowUserSvc_1e44aa is Manual
+The service ProfSvc is Automatic
+The Service PushToInstall is Manual
+The Service QWAVE is Manual
+The Service RasAuto is Manual
+The service RasMan is Automatic
+The service RemoteAccess is Disabled
+The service RemoteRegistry is Disabled
+The Service RetailDemo is Manual
+The Service RmSvc is Manual
+The service RpcEptMapper is Automatic
+The Service RpcLocator is Manual
+The service RpcSs is Automatic
+The service SamSs is Automatic
+The service SCardSvr is Disabled
+The Service ScDeviceEnum is Manual
+The service Schedule is Automatic
+The Service SCPolicySvc is Manual
+The Service SDRSVC is Manual
+The Service seclogon is Manual
+The service SecurityHealthService is Automatic
+The service sedsvc is Automatic
+The Service SEMgrSvc is Manual
+The service SENS is Automatic
+The Service Sense is Manual
+The Service SensorDataService is Manual
+The Service SensorService is Manual
+The Service SensrSvc is Manual
+The Service SessionEnv is Manual
+The Service SharedAccess is Manual
+The Service SharedRealitySvc is Manual
+The service ShellHWDetection is Automatic
+The service shpamsvc is Disabled
+The Service smphost is Manual
+The Service SmsRouter is Manual
+The Service SNMPTRAP is Manual
+The Service spectrum is Manual
+The service Spooler is Automatic
+The service sppsvc is Automatic
+The Service SSDPSRV is Manual
+The Service SstpSvc is Manual
+The Service StateRepository is Manual
+The Service stisvc is Manual
+The Service StorSvc is Manual
+The Service svsvc is Manual
+The Service swprv is Manual
+The service SysMain is Automatic
+The service SystemEventsBroker is Automatic
+The Service TabletInputService is Manual
+The Service TapiSrv is Manual
+The Service TermService is Manual
+The service Themes is Automatic
+The Service TieringEngineService is Manual
+The Service tiledatamodelsvc is Manual
+The Service TimeBrokerSvc is Manual
+The Service TokenBroker is Manual
+The service TrkWks is Automatic
+The Service TrustedInstaller is Manual
+The service tzautoupdate is Disabled
+The service UevAgentService is Disabled
+The Service UI0Detect is Manual
+The Service UmRdpService is Manual
+The Service UnistoreSvc_1e44aa is Manual
+The Service upnphost is Manual
+The Service UserDataSvc_1e44aa is Manual
+The service UserManager is Automatic
+The Service UsoSvc is Manual
+The Service VaultSvc is Manual
+The Service vds is Manual
+The service VMAuthdService is Automatic
+The Service vmicguestinterface is Manual
+The Service vmicheartbeat is Manual
+The Service vmickvpexchange is Manual
+The Service vmicrdv is Manual
+The Service vmicshutdown is Manual
+The Service vmictimesync is Manual
+The Service vmicvmsession is Manual
+The Service vmicvss is Manual
+The service VMnetDHCP is Automatic
+The service VMUSBArbService is Automatic
+The service VMware NAT Service is Automatic
+The service VMwareHostd is Automatic
+The Service VSS is Manual
+The Service W32Time is Manual
+The Service WalletService is Manual
+The Service WarpJITSvc is Manual
+The Service wbengine is Manual
+The Service WbioSrvc is Manual
+The service Wcmsvc is Automatic
+The Service wcncsvc is Manual
+The Service WdiServiceHost is Manual
+The Service WdiSystemHost is Manual
+The Service WdNisSvc is Manual
+The Service WebClient is Manual
+The Service Wecsvc is Manual
+The Service WEPHOSTSVC is Manual
+The Service wercplsupport is Manual
+The Service WerSvc is Manual
+The Service WFDSConMgrSvc is Manual
+The Service WiaRpc is Manual
+The service WinDefend is Automatic
+The Service WinHttpAutoProxySvc is Manual
+The service Winmgmt is Automatic
+The Service WinRM is Manual
+The Service wisvc is Manual
+The Service WlanSvc is Manual
+The Service wlidsvc is Manual
+The Service wlpasvc is Manual
+The Service wmiApSrv is Manual
+The Service WMPNetworkSvc is Manual
+The Service workfolderssvc is Manual
+The Service WPDBusEnum is Manual
+The service WpnService is Automatic
+The service WpnUserService_1e44aa is Automatic
+The service wscsvc is Automatic
+The service WSearch is Automatic
+The Service wuauserv is Manual
+The Service WwanSvc is Manual
+The Service xbgm is Manual
+The Service XblAuthManager is Manual
+The Service XblGameSave is Manual
+The Service XboxGipSvc is Manual
+The Service XboxNetApiSvc is Manual
+PS C:\Windows\system32> $services= Get-Service
+foreach ($service in $services)
+    {
+     
+       Switch ($service.StartType)
+
+            {
+
+                Automatic {
+                
+                    Write-Host "The service $($service.Name) is Automatic"
+
+                          }
+
+                Manual    {
+                
+                    Write-Host "The service $($service.Name) is Manual"
+
+                          }
+
+                Disabled  {
+                
+                    Write-Host "The service $($service.Name) is Disabled"
+
+                          }
+               }                                        
+
+    }
+The service AJRouter is Manual
+The service ALG is Manual
+The service AppIDSvc is Manual
+The service Appinfo is Manual
+The service AppMgmt is Manual
+The service AppReadiness is Manual
+The service AppVClient is Disabled
+The service AppXSvc is Manual
+The service AssignedAccessManagerSvc is Manual
+The service AudioEndpointBuilder is Automatic
+The service Audiosrv is Automatic
+The service AxInstSV is Manual
+The service BDESVC is Manual
+The service BFE is Automatic
+The service BITS is Automatic
+The service BrokerInfrastructure is Automatic
+The service Browser is Manual
+The service BthHFSrv is Manual
+The service bthserv is Manual
+The service camsvc is Manual
+The service CDPSvc is Automatic
+The service CDPUserSvc_1e44aa is Automatic
+The service CertPropSvc is Manual
+The service ClipSVC is Manual
+The service COMSysApp is Manual
+The service CoreMessagingRegistrar is Automatic
+The service cphs is Manual
+The service CryptSvc is Automatic
+The service CscService is Manual
+The service DcomLaunch is Automatic
+The service defragsvc is Manual
+The service DeviceAssociationService is Automatic
+The service DeviceInstall is Manual
+The service DevicesFlowUserSvc_1e44aa is Manual
+The service DevQueryBroker is Manual
+The service Dhcp is Automatic
+The service diagnosticshub.standardcollector.service is Manual
+The service diagsvc is Manual
+The service DiagTrack is Automatic
+The service DmEnrollmentSvc is Manual
+The service dmwappushservice is Manual
+The service Dnscache is Automatic
+The service DoSvc is Automatic
+The service dot3svc is Manual
+The service DPS is Automatic
+The service DsmSvc is Manual
+The service DsSvc is Manual
+The service DusmSvc is Automatic
+The service Eaphost is Manual
+The service EFS is Manual
+The service embeddedmode is Manual
+The service EntAppSvc is Manual
+The service EventLog is Automatic
+The service EventSystem is Automatic
+The service Fax is Manual
+The service fdPHost is Manual
+The service FDResPub is Manual
+The service fhsvc is Manual
+The service FontCache is Automatic
+The service FrameServer is Manual
+The service gpsvc is Automatic
+The service GraphicsPerfSvc is Manual
+The service gupdate is Automatic
+The service gupdatem is Manual
+The service hidserv is Manual
+The service HomeGroupListener is Manual
+The service HomeGroupProvider is Manual
+The service HvHost is Manual
+The service icssvc is Manual
+The service igfxCUIService2.0.0.0 is Automatic
+The service IKEEXT is Automatic
+The service InstallService is Manual
+The service iphlpsvc is Automatic
+The service IpxlatCfgSvc is Manual
+The service irmon is Manual
+The service KeyIso is Manual
+The service KtmRm is Manual
+The service LanmanServer is Automatic
+The service LanmanWorkstation is Automatic
+The service lfsvc is Manual
+The service LicenseManager is Manual
+The service lltdsvc is Manual
+The service lmhosts is Manual
+The service LSM is Automatic
+The service MapsBroker is Automatic
+The service MessagingService_1e44aa is Manual
+The service MpsSvc is Automatic
+The service MSDTC is Manual
+The service MSiSCSI is Manual
+The service msiserver is Manual
+The service NaturalAuthentication is Manual
+The service NcaSvc is Manual
+The service NcbService is Manual
+The service NcdAutoSetup is Manual
+The service Netlogon is Manual
+The service Netman is Manual
+The service netprofm is Manual
+The service NetSetupSvc is Manual
+The service NetTcpPortSharing is Disabled
+The service NgcCtnrSvc is Manual
+The service NgcSvc is Manual
+The service NlaSvc is Automatic
+The service nsi is Automatic
+The service OneSyncSvc_1e44aa is Automatic
+The service osrss is Automatic
+The service p2pimsvc is Manual
+The service p2psvc is Manual
+The service PcaSvc is Manual
+The service PeerDistSvc is Manual
+The service PerfHost is Manual
+The service PhoneSvc is Manual
+The service PimIndexMaintenanceSvc_1e44aa is Manual
+The service pla is Manual
+The service PlugPlay is Manual
+The service PNRPAutoReg is Manual
+The service PNRPsvc is Manual
+The service PolicyAgent is Manual
+The service Power is Automatic
+The service PrintNotify is Manual
+The service PrintWorkflowUserSvc_1e44aa is Manual
+The service ProfSvc is Automatic
+The service PushToInstall is Manual
+The service QWAVE is Manual
+The service RasAuto is Manual
+The service RasMan is Automatic
+The service RemoteAccess is Disabled
+The service RemoteRegistry is Disabled
+The service RetailDemo is Manual
+The service RmSvc is Manual
+The service RpcEptMapper is Automatic
+The service RpcLocator is Manual
+The service RpcSs is Automatic
+The service SamSs is Automatic
+The service SCardSvr is Disabled
+The service ScDeviceEnum is Manual
+The service Schedule is Automatic
+The service SCPolicySvc is Manual
+The service SDRSVC is Manual
+The service seclogon is Manual
+The service SecurityHealthService is Automatic
+The service sedsvc is Automatic
+The service SEMgrSvc is Manual
+The service SENS is Automatic
+The service Sense is Manual
+The service SensorDataService is Manual
+The service SensorService is Manual
+The service SensrSvc is Manual
+The service SessionEnv is Manual
+The service SharedAccess is Manual
+The service SharedRealitySvc is Manual
+The service ShellHWDetection is Automatic
+The service shpamsvc is Disabled
+The service smphost is Manual
+The service SmsRouter is Manual
+The service SNMPTRAP is Manual
+The service spectrum is Manual
+The service Spooler is Automatic
+The service sppsvc is Automatic
+The service SSDPSRV is Manual
+The service SstpSvc is Manual
+The service StateRepository is Manual
+The service stisvc is Manual
+The service StorSvc is Manual
+The service svsvc is Manual
+The service swprv is Manual
+The service SysMain is Automatic
+The service SystemEventsBroker is Automatic
+The service TabletInputService is Manual
+The service TapiSrv is Manual
+The service TermService is Manual
+The service Themes is Automatic
+The service TieringEngineService is Manual
+The service tiledatamodelsvc is Manual
+The service TimeBrokerSvc is Manual
+The service TokenBroker is Manual
+The service TrkWks is Automatic
+The service TrustedInstaller is Manual
+The service tzautoupdate is Disabled
+The service UevAgentService is Disabled
+The service UI0Detect is Manual
+The service UmRdpService is Manual
+The service UnistoreSvc_1e44aa is Manual
+The service upnphost is Manual
+The service UserDataSvc_1e44aa is Manual
+The service UserManager is Automatic
+The service UsoSvc is Manual
+The service VaultSvc is Manual
+The service vds is Manual
+The service VMAuthdService is Automatic
+The service vmicguestinterface is Manual
+The service vmicheartbeat is Manual
+The service vmickvpexchange is Manual
+The service vmicrdv is Manual
+The service vmicshutdown is Manual
+The service vmictimesync is Manual
+The service vmicvmsession is Manual
+The service vmicvss is Manual
+The service VMnetDHCP is Automatic
+The service VMUSBArbService is Automatic
+The service VMware NAT Service is Automatic
+The service VMwareHostd is Automatic
+The service VSS is Manual
+The service W32Time is Manual
+The service WalletService is Manual
+The service WarpJITSvc is Manual
+The service wbengine is Manual
+The service WbioSrvc is Manual
+The service Wcmsvc is Automatic
+The service wcncsvc is Manual
+The service WdiServiceHost is Manual
+The service WdiSystemHost is Manual
+The service WdNisSvc is Manual
+The service WebClient is Manual
+The service Wecsvc is Manual
+The service WEPHOSTSVC is Manual
+The service wercplsupport is Manual
+The service WerSvc is Manual
+The service WFDSConMgrSvc is Manual
+The service WiaRpc is Manual
+The service WinDefend is Automatic
+The service WinHttpAutoProxySvc is Manual
+The service Winmgmt is Automatic
+The service WinRM is Manual
+The service wisvc is Manual
+The service WlanSvc is Manual
+The service wlidsvc is Manual
+The service wlpasvc is Manual
+The service wmiApSrv is Manual
+The service WMPNetworkSvc is Manual
+The service workfolderssvc is Manual
+The service WPDBusEnum is Manual
+The service WpnService is Automatic
+The service WpnUserService_1e44aa is Automatic
+The service wscsvc is Automatic
+The service WSearch is Automatic
+The service wuauserv is Manual
+The service WwanSvc is Manual
+The service xbgm is Manual
+The service XblAuthManager is Manual
+The service XblGameSave is Manual
+The service XboxGipSvc is Manual
+The service XboxNetApiSvc is Manual
+PS C:\Windows\system32> foreach ($service in $services)
+    {
+     
+       Switch ($service.StartType) ## we can use "Swtich -wildcard()" and -casensitive
+
+            {
+
+                Automatic {
+                
+                    Write-Host "The service $($service.Name) is Automatic"
+
+                          }
+
+                Manual    {
+                
+                    Write-Host "The service $($service.Name) is Manual"
+
+                          }
+
+                Disabled  {
+                
+                    Write-Host "The service $($service.Name) is Disabled"
+
+                    }
+
+                  Default  {
+                
+                    Write-Host "No other values found"     
+                    
+                     }
+
+               }                                        
+
+    }
+The service AJRouter is Manual
+The service ALG is Manual
+The service AppIDSvc is Manual
+The service Appinfo is Manual
+The service AppMgmt is Manual
+The service AppReadiness is Manual
+The service AppVClient is Disabled
+The service AppXSvc is Manual
+The service AssignedAccessManagerSvc is Manual
+The service AudioEndpointBuilder is Automatic
+The service Audiosrv is Automatic
+The service AxInstSV is Manual
+The service BDESVC is Manual
+The service BFE is Automatic
+The service BITS is Automatic
+The service BrokerInfrastructure is Automatic
+The service Browser is Manual
+The service BthHFSrv is Manual
+The service bthserv is Manual
+The service camsvc is Manual
+The service CDPSvc is Automatic
+The service CDPUserSvc_1e44aa is Automatic
+The service CertPropSvc is Manual
+The service ClipSVC is Manual
+The service COMSysApp is Manual
+The service CoreMessagingRegistrar is Automatic
+The service cphs is Manual
+The service CryptSvc is Automatic
+The service CscService is Manual
+The service DcomLaunch is Automatic
+The service defragsvc is Manual
+The service DeviceAssociationService is Automatic
+The service DeviceInstall is Manual
+The service DevicesFlowUserSvc_1e44aa is Manual
+The service DevQueryBroker is Manual
+The service Dhcp is Automatic
+The service diagnosticshub.standardcollector.service is Manual
+The service diagsvc is Manual
+The service DiagTrack is Automatic
+The service DmEnrollmentSvc is Manual
+The service dmwappushservice is Manual
+The service Dnscache is Automatic
+The service DoSvc is Automatic
+The service dot3svc is Manual
+The service DPS is Automatic
+The service DsmSvc is Manual
+The service DsSvc is Manual
+The service DusmSvc is Automatic
+The service Eaphost is Manual
+The service EFS is Manual
+The service embeddedmode is Manual
+The service EntAppSvc is Manual
+The service EventLog is Automatic
+The service EventSystem is Automatic
+The service Fax is Manual
+The service fdPHost is Manual
+The service FDResPub is Manual
+The service fhsvc is Manual
+The service FontCache is Automatic
+The service FrameServer is Manual
+The service gpsvc is Automatic
+The service GraphicsPerfSvc is Manual
+The service gupdate is Automatic
+The service gupdatem is Manual
+The service hidserv is Manual
+The service HomeGroupListener is Manual
+The service HomeGroupProvider is Manual
+The service HvHost is Manual
+The service icssvc is Manual
+The service igfxCUIService2.0.0.0 is Automatic
+The service IKEEXT is Automatic
+The service InstallService is Manual
+The service iphlpsvc is Automatic
+The service IpxlatCfgSvc is Manual
+The service irmon is Manual
+The service KeyIso is Manual
+The service KtmRm is Manual
+The service LanmanServer is Automatic
+The service LanmanWorkstation is Automatic
+The service lfsvc is Manual
+The service LicenseManager is Manual
+The service lltdsvc is Manual
+The service lmhosts is Manual
+The service LSM is Automatic
+The service MapsBroker is Automatic
+The service MessagingService_1e44aa is Manual
+The service MpsSvc is Automatic
+The service MSDTC is Manual
+The service MSiSCSI is Manual
+The service msiserver is Manual
+The service NaturalAuthentication is Manual
+The service NcaSvc is Manual
+The service NcbService is Manual
+The service NcdAutoSetup is Manual
+The service Netlogon is Manual
+The service Netman is Manual
+The service netprofm is Manual
+The service NetSetupSvc is Manual
+The service NetTcpPortSharing is Disabled
+The service NgcCtnrSvc is Manual
+The service NgcSvc is Manual
+The service NlaSvc is Automatic
+The service nsi is Automatic
+The service OneSyncSvc_1e44aa is Automatic
+The service osrss is Automatic
+The service p2pimsvc is Manual
+The service p2psvc is Manual
+The service PcaSvc is Manual
+The service PeerDistSvc is Manual
+The service PerfHost is Manual
+The service PhoneSvc is Manual
+The service PimIndexMaintenanceSvc_1e44aa is Manual
+The service pla is Manual
+The service PlugPlay is Manual
+The service PNRPAutoReg is Manual
+The service PNRPsvc is Manual
+The service PolicyAgent is Manual
+The service Power is Automatic
+The service PrintNotify is Manual
+The service PrintWorkflowUserSvc_1e44aa is Manual
+The service ProfSvc is Automatic
+The service PushToInstall is Manual
+The service QWAVE is Manual
+The service RasAuto is Manual
+The service RasMan is Automatic
+The service RemoteAccess is Disabled
+The service RemoteRegistry is Disabled
+The service RetailDemo is Manual
+The service RmSvc is Manual
+The service RpcEptMapper is Automatic
+The service RpcLocator is Manual
+The service RpcSs is Automatic
+The service SamSs is Automatic
+The service SCardSvr is Disabled
+The service ScDeviceEnum is Manual
+The service Schedule is Automatic
+The service SCPolicySvc is Manual
+The service SDRSVC is Manual
+The service seclogon is Manual
+The service SecurityHealthService is Automatic
+The service sedsvc is Automatic
+The service SEMgrSvc is Manual
+The service SENS is Automatic
+The service Sense is Manual
+The service SensorDataService is Manual
+The service SensorService is Manual
+The service SensrSvc is Manual
+The service SessionEnv is Manual
+The service SharedAccess is Manual
+The service SharedRealitySvc is Manual
+The service ShellHWDetection is Automatic
+The service shpamsvc is Disabled
+The service smphost is Manual
+The service SmsRouter is Manual
+The service SNMPTRAP is Manual
+The service spectrum is Manual
+The service Spooler is Automatic
+The service sppsvc is Automatic
+The service SSDPSRV is Manual
+The service SstpSvc is Manual
+The service StateRepository is Manual
+The service stisvc is Manual
+The service StorSvc is Manual
+The service svsvc is Manual
+The service swprv is Manual
+The service SysMain is Automatic
+The service SystemEventsBroker is Automatic
+The service TabletInputService is Manual
+The service TapiSrv is Manual
+The service TermService is Manual
+The service Themes is Automatic
+The service TieringEngineService is Manual
+The service tiledatamodelsvc is Manual
+The service TimeBrokerSvc is Manual
+The service TokenBroker is Manual
+The service TrkWks is Automatic
+The service TrustedInstaller is Manual
+The service tzautoupdate is Disabled
+The service UevAgentService is Disabled
+The service UI0Detect is Manual
+The service UmRdpService is Manual
+The service UnistoreSvc_1e44aa is Manual
+The service upnphost is Manual
+The service UserDataSvc_1e44aa is Manual
+The service UserManager is Automatic
+The service UsoSvc is Manual
+The service VaultSvc is Manual
+The service vds is Manual
+The service VMAuthdService is Automatic
+The service vmicguestinterface is Manual
+The service vmicheartbeat is Manual
+The service vmickvpexchange is Manual
+The service vmicrdv is Manual
+The service vmicshutdown is Manual
+The service vmictimesync is Manual
+The service vmicvmsession is Manual
+The service vmicvss is Manual
+The service VMnetDHCP is Automatic
+The service VMUSBArbService is Automatic
+The service VMware NAT Service is Automatic
+The service VMwareHostd is Automatic
+The service VSS is Manual
+The service W32Time is Manual
+The service WalletService is Manual
+The service WarpJITSvc is Manual
+The service wbengine is Manual
+The service WbioSrvc is Manual
+The service Wcmsvc is Automatic
+The service wcncsvc is Manual
+The service WdiServiceHost is Manual
+The service WdiSystemHost is Manual
+The service WdNisSvc is Manual
+The service WebClient is Manual
+The service Wecsvc is Manual
+The service WEPHOSTSVC is Manual
+The service wercplsupport is Manual
+The service WerSvc is Manual
+The service WFDSConMgrSvc is Manual
+The service WiaRpc is Manual
+The service WinDefend is Automatic
+The service WinHttpAutoProxySvc is Manual
+The service Winmgmt is Automatic
+The service WinRM is Manual
+The service wisvc is Manual
+The service WlanSvc is Manual
+The service wlidsvc is Manual
+The service wlpasvc is Manual
+The service wmiApSrv is Manual
+The service WMPNetworkSvc is Manual
+The service workfolderssvc is Manual
+The service WPDBusEnum is Manual
+The service WpnService is Automatic
+The service WpnUserService_1e44aa is Automatic
+The service wscsvc is Automatic
+The service WSearch is Automatic
+The service wuauserv is Manual
+The service WwanSvc is Manual
+The service xbgm is Manual
+The service XblAuthManager is Manual
+The service XblGameSave is Manual
+The service XboxGipSvc is Manual
+The service XboxNetApiSvc is Manual
+PS C:\Windows\system32> Get-Service | Get-Member
+
+
+   TypeName: System.ServiceProcess.ServiceController
+
+Name                      MemberType    Definition
+----                      ----------    ----------
+Name                      AliasProperty Name = ServiceName
+RequiredServices          AliasProperty RequiredServices = ServicesDependedOn
+Disposed                  Event         System.EventHandler Disposed(System.Object, System.EventArgs)
+Close                     Method        void Close()
+Continue                  Method        void Continue()
+CreateObjRef              Method        System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Dispose                   Method        void Dispose(), void IDisposable.Dispose()
+Equals                    Method        bool Equals(System.Object obj)
+ExecuteCommand            Method        void ExecuteCommand(int command)
+GetHashCode               Method        int GetHashCode()
+GetLifetimeService        Method        System.Object GetLifetimeService()
+GetType                   Method        type GetType()
+InitializeLifetimeService Method        System.Object InitializeLifetimeService()
+Pause                     Method        void Pause()
+Refresh                   Method        void Refresh()
+Start                     Method        void Start(), void Start(string[] args)
+Stop                      Method        void Stop()
+WaitForStatus             Method        void WaitForStatus(System.ServiceProcess.ServiceControllerStatus desiredStatus), void WaitForStatus(System.ServiceProcess.ServiceControllerStatus desiredStatus, timespan ...
+CanPauseAndContinue       Property      bool CanPauseAndContinue {get;}
+CanShutdown               Property      bool CanShutdown {get;}
+CanStop                   Property      bool CanStop {get;}
+Container                 Property      System.ComponentModel.IContainer Container {get;}
+DependentServices         Property      System.ServiceProcess.ServiceController[] DependentServices {get;}
+DisplayName               Property      string DisplayName {get;set;}
+MachineName               Property      string MachineName {get;set;}
+ServiceHandle             Property      System.Runtime.InteropServices.SafeHandle ServiceHandle {get;}
+ServiceName               Property      string ServiceName {get;set;}
+ServicesDependedOn        Property      System.ServiceProcess.ServiceController[] ServicesDependedOn {get;}
+ServiceType               Property      System.ServiceProcess.ServiceType ServiceType {get;}
+Site                      Property      System.ComponentModel.ISite Site {get;set;}
+StartType                 Property      System.ServiceProcess.ServiceStartMode StartType {get;}
+Status                    Property      System.ServiceProcess.ServiceControllerStatus Status {get;}
+ToString                  ScriptMethod  System.Object ToString();
+
+
+PS C:\Windows\system32> 4
+4
+PS C:\Windows\system32> .
+At line:1 char:1
++ .
++ ~
+Missing expression after '.' in pipeline element.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingExpression
+
+PS C:\Windows\system32> 3
+3
+PS C:\Windows\system32> Get-Help about_rgular* -ShowWindow
+PS C:\Windows\system32> Get-Help about_rgular* -ShowWindow
+PS C:\Windows\system32> Get-Help about_rgular* -ShowWindow
+PS C:\Windows\system32> Get-Help about_reular* -ShowWindow
+PS C:\Windows\system32> Get-Help about_regular* -ShowWindow
+PS C:\Windows\system32> $in=Read-Host "Enter your Birth Date"
+if ($in -match "[1-31]\-[1-12]\-\d{2}")
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+
+}
+
+else
+{
+
+Write-Host You have not entered the date in proper format use format dd-mm-yy.
+
+$in=Read-Host "Enter your Birth Date"
+}
+You have not entered the date in proper format use format dd-mm-yy.
+PS C:\Windows\system32> $in=Read-Host "Enter your Birth Date"
+if ($in -match "[1-31]\-[1-12]\-\d{2}")
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+
+}
+
+else
+{
+
+Write-Host You have not entered the date in proper format use format dd-mm-yy.
+
+$in=Read-Host "Enter your Birth Date"
+}
+Your input is accepted
+PS C:\Windows\system32> $in=Read-Host "Enter your Birth Date"
+if ($in -match "[1-31]\-[1-12]\-\d{2}")
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+
+}
+
+else
+{
+
+Write-Host You have not entered the date in proper format use format dd-mm-yy.
+
+$in=Read-Host "Enter your Birth Date"
+}
+You have not entered the date in proper format use format dd-mm-yy.
+PS C:\Windows\system32> TerminatingError(): "The pipeline has been stopped."
+PS C:\Windows\system32> $in=Read-Host "Enter your Birth Date"
+if ($in -match "[1-31]\-[1-12]\-\d{2}")
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+
+}
+
+else
+{
+
+Write-Host You have not entered the date in proper format use format dd-mm-yy.
+
+$in=Read-Host "Enter your Birth Date"
+}
+You have not entered the date in proper format use format dd-mm-yy.
+PS C:\Windows\system32> TerminatingError(Resolve-Path): "The specified wildcard character pattern is not valid: \[1-*"
+PS C:\Windows\system32> TerminatingError(Get-Command): "The specified wildcard character pattern is not valid: [1-*"
+PS C:\Windows\system32> TerminatingError(Resolve-Path): "The specified wildcard character pattern is not valid: ^\[1-*"
+PS C:\Windows\system32> TerminatingError(Get-Command): "The specified wildcard character pattern is not valid: ^[1-*"
+PS C:\Windows\system32> 1 -match ^[1-31]&
+At line:1 char:9
++ 1 -match ^[1-31]&
++         ~
+You must provide a value expression following the '-match' operator.
+
+At line:1 char:10
++ 1 -match ^[1-31]&
++          ~~~~~~~
+Unexpected token '^[1-31]' in expression or statement.
+
+At line:1 char:17
++ 1 -match ^[1-31]&
++                 ~
+The ampersand (&) character is not allowed. The & operator is reserved for future use; wrap an ampersand in double quotation marks ("&") to pass it as part of a string.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : ExpectedValueExpression
+
+PS C:\Windows\system32> 1 -match "^[1-31]&"
+False
+PS C:\Windows\system32> 1 -match "[1-31]&"
+False
+PS C:\Windows\system32> 1 -match "[1-31]"
+True
+PS C:\Windows\system32> 32 -match "[1-31]"
+True
+PS C:\Windows\system32> 32 -match "[1-30]"
+True
+PS C:\Windows\system32> $in=Read-Host "Enter your Birth Date"
+if ($in -match "[1-31]\-[1-12]\-\d{2}")
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+
+}
+
+else
+{
+
+Write-Host You have not entered the date in proper format use format dd-mm-yy.
+
+$in=Read-Host "Enter your Birth Date"
+}
+PS C:\Windows\system32> TerminatingError(): "The pipeline has been stopped."
+PS C:\Windows\system32> 32 -match "^[1-31]"
+True
+PS C:\Windows\system32> 32 -match "^[1-31]$"
+False
+PS C:\Windows\system32> 1 -match "^[1-31]$"
+True
+PS C:\Windows\system32> 31 -match "^[1-31]$"
+False
+PS C:\Windows\system32> $in=Read-Host "Enter your Birth Date"
+if ($in -match "^[1-31]$\-^[1-12]$\-\d{2}")
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+
+}
+
+else
+{
+
+Write-Host You have not entered the date in proper format use format dd-mm-yy.
+
+$in=Read-Host "Enter your Birth Date"
+}
+You have not entered the date in proper format use format dd-mm-yy.
+PS C:\Windows\system32> $in=Read-Host "Enter your Birth Date"
+if ($in -match "^[1-31]$\-^[1-12]$\-\d{2}")
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+
+}
+
+else
+{
+
+Write-Host You have not entered the date in proper format use format dd-mm-yy.
+
+$in=Read-Host "Enter your Birth Date"
+}
+You have not entered the date in proper format use format dd-mm-yy.
+PS C:\Windows\system32> 30 -match "^[1-30]$"
+False
+PS C:\Windows\system32> TerminatingError(Resolve-Path): "The specified wildcard character pattern is not valid: \[a-\]*"
+PS C:\Windows\system32> windows -match "[a-z]{3}\-[a-z]{2}\-[a-z]{1}"
+windows : The term 'windows' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ windows -match "[a-z]{3}\-[a-z]{2}\-[a-z]{1}"
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (windows:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+windows : The term 'windows' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and
+try again.
+At line:1 char:1
++ windows -match "[a-z]{3}\-[a-z]{2}\-[a-z]{1}"
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (windows:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Windows\system32> "windows" -match "[a-z]{3}\-[a-z]{2}\-[a-z]{1}"
+False
+PS C:\Windows\system32> "window" -match "[a-z]{3}\-[a-z]{2}\-[a-z]{1}"
+False
+PS C:\Windows\system32> "win-do-w" -match "[a-z]{3}\-[a-z]{2}\-[a-z]{1}"
+True
+PS C:\Windows\system32> "win-do-ww" -match "[a-z]{3}\-[a-z]{2}\-[a-z]{1}"
+True
+PS C:\Windows\system32> "wi-do-ww" -match "[a-z]{3}\-[a-z]{2}\-[a-z]{1}"
+False
+PS C:\Windows\system32> "win-do-ww" -match "[a-z]{3}\-[a-z]{2}\-[a-z]{1}"
+True
+PS C:\Windows\system32> "win-do-w" -match "[a-z]{3}\-[a-z]{2}\-[a-z]{1}"
+True
+PS C:\Windows\system32> "win-do-w" -match "[a-z]{3}\-[a-z]{2}\-[a-z]{1}"
+True
+PS C:\Windows\system32> "win-do-ws" -match "[a-z]{3}\-[a-z]{2}\-[a-z]{1}"
+True
+PS C:\Windows\system32> "wi-do-w" -match "[a-z]{3}\-[a-z]{2}\-[a-z]{1}"
+False
+PS C:\Windows\system32> "win-do-ws" -match "^[a-z]{3}\-[a-z]{2}\-[a-z]{1}$"
+False
+PS C:\Windows\system32> $in=Read-Host "Enter the string"
+if ($in -match "^[a-z]{3}\-[a-z]{2}\-[a-z]{1}$")
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+
+}
+
+else
+{
+
+Write-Host You have not entered the string in proper format use format win-ma-y.
+
+$in=Read-Host "Enter the string"
+}
+Your input is accepted
+PS C:\Windows\system32> $in=Read-Host "Enter the string"
+if ($in -match "^[a-z]{3}\-[a-z]{2}\-[a-z]{1}$")
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+
+}
+
+else
+{
+
+Write-Host You have not entered the string in proper format use format win-ma-y.
+
+$in=Read-Host "Enter the string"
+}
+You have not entered the string in proper format use format win-ma-y.
+PS C:\Windows\system32> $in=Read-Host "Enter your Birth Date"
+if ($in -match "^[1-31]\-^[1-12]$\-\d{2}$")
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+
+}
+
+else
+{
+
+Write-Host You have not entered the date in proper format use format dd-mm-yy.
+
+$in=Read-Host "Enter your Birth Date"
+}
+You have not entered the date in proper format use format dd-mm-yy.
+PS C:\Windows\system32> $in=Read-Host "Enter the string"
+if ($in -match "^[a-z]{3}\@[a-z]{2}\@[a-z]{1}$")
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+
+}
+
+else
+{
+
+Write-Host You have not entered the string in proper format use format win-ma-y.
+
+$in=Read-Host "Enter the string"
+}
+Your input is accepted
+PS C:\Windows\system32> $a=$true
+while ($a)
+{
+Write-Host "$a"
+}
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+PS C:\Windows\system32> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Windows\system32> $a=$true
+while ($a)
+{
+Write-Host "$a"
+$a=$false
+Missing closing '}' in statement block or type definition.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingEndCurlyBrace
+
+PS C:\Windows\system32> $a=$true
+while ($a)
+{
+Write-Host "$a"
+$a=$false
+}
+True
+PS C:\Windows\system32> $in=Read-Host "Enter the string"
+if ($in -match "^[a-z]{3}\@[a-z]{2}\@[a-z]{1}$")##"^[a-z]{3}-[a-z]{2}-[a-z]{1}$" without escape character also it works
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+
+}
+
+else
+{
+
+Write-Host You have not entered the string in proper format use format win-ma-y.
+
+$in=Read-Host "Enter the string"
+}
+You have not entered the string in proper format use format win-ma-y.
+PS C:\Windows\system32> While ($in=$true)
+{
+$in=Read-Host "Enter the string"
+if ($in -match "^[a-z]{3}\@[a-z]{2}\@[a-z]{1}$")##"^[a-z]{3}-[a-z]{2}-[a-z]{1}$" without escape character also it works
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+$in=$false
+
+}
+
+else
+{
+
+Write-Host You have not entered the string in proper format use format win-ma-y.
+$in=Read-Host "Enter the string"
+}
+}
+You have not entered the string in proper format use format win-ma-y.
+You have not entered the string in proper format use format win-ma-y.
+You have not entered the string in proper format use format win-ma-y.
+PS C:\Windows\system32> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Windows\system32> While ($in=$true)
+{
+$in=Read-Host "Enter the string"
+if ($in -match "^[a-z]{3}\@[a-z]{2}\@[a-z]{1}$")##"^[a-z]{3}-[a-z]{2}-[a-z]{1}$" without escape character also it works
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+$in=$false
+
+}
+
+else
+{
+
+Write-Host You have not entered the string in proper format use format win-ma-y.
+$in=Read-Host "Enter the string"
+}
+}
+You have not entered the string in proper format use format win-ma-y.
+PS C:\Windows\system32> TerminatingError(): "The pipeline has been stopped."
+PS C:\Windows\system32> While ($in=$true)
+{
+$in=Read-Host "Enter the string"
+if ($in -match "^[a-z]{3}\@[a-z]{2}\@[a-z]{1}$")##"^[a-z]{3}-[a-z]{2}-[a-z]{1}$" without escape character also it works
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+$in=$false
+
+}
+
+else
+{
+
+Write-Host You have not entered the string in proper format use format win-ma-y.
+$in=Read-Host "Enter the string"
+}
+}
+You have not entered the string in proper format use format win-ma-y.
+PS C:\Windows\system32> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Windows\system32> $in=$true
+While ($in)
+{
+$in=Read-Host "Enter the string"
+if ($in -match "^[a-z]{3}\@[a-z]{2}\@[a-z]{1}$")##"^[a-z]{3}-[a-z]{2}-[a-z]{1}$" without escape character also it works
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+$in=$false
+
+}
+
+else
+{
+
+Write-Host You have not entered the string in proper format use format win-ma-y.
+$in=Read-Host "Enter the string"
+}
+}
+You have not entered the string in proper format use format win-ma-y.
+PS C:\Windows\system32> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Windows\system32> $in=$true
+While ($in)
+{
+$in=Read-Host "Enter the string"
+if ($in -match "^[a-z]{3}\-[a-z]{2}\-[a-z]{1}$")##"^[a-z]{3}-[a-z]{2}-[a-z]{1}$" without escape character also it works
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+$in=$false
+
+}
+
+else
+{
+
+Write-Host You have not entered the string in proper format use format win-ma-y.
+$in=Read-Host "Enter the string"
+}
+}
+You have not entered the string in proper format use format win-ma-y.
+PS C:\Windows\system32> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Windows\system32> $in=$true
+While ($in)
+{
+$in=Read-Host "Enter the string"
+if ($in -match "^[a-z]{3}\-[a-z]{2}\-[a-z]{1}$")##"^[a-z]{3}-[a-z]{2}-[a-z]{1}$" without escape character also it works
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+$in=$false
+
+}
+
+else
+{
+
+Write-Host You have not entered the string in proper format use format win-ma-y.
+$in=Read-Host "Enter the string"
+}
+}
+Your input is accepted
+PS C:\Windows\system32> $in=$true
+While ($in)
+{
+$in=Read-Host "Enter the string"
+if ($in -match "^[a-z]{3}\-[a-z]{2}\-[a-z]{1}$")##"^[a-z]{3}-[a-z]{2}-[a-z]{1}$" without escape character also it works
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+$in=$false
+
+}
+
+else
+{
+
+Write-Host You have not entered the string in proper format use format win-ma-y.
+$in=Read-Host "Enter the string"
+}
+}
+You have not entered the string in proper format use format win-ma-y.
+PS C:\Windows\system32> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Windows\system32> $in=$true
+While ($in)
+{
+$in=Read-Host "Enter the string"
+if ($in -match "^[a-z]{3}\-[a-z]{2}\-[a-z]{1}$")##"^[a-z]{3}-[a-z]{2}-[a-z]{1}$" without escape character also it works
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+$in=$false
+
+}
+
+else
+{
+
+Write-Host You have not entered the string in proper format use format win-ma-y.
+$in=Read-Host "Enter the string"
+}
+}
+Your input is accepted
+PS C:\Windows\system32> $in=$true
+While ($in)
+{
+$in=Read-Host "Enter the string"
+if ($in -match "^[a-z]{3}\-[a-z]{2}\-[a-z]{1}$")##"^[a-z]{3}-[a-z]{2}-[a-z]{1}$" without escape character also it works
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+$in=$false
+
+}
+
+else
+{
+
+Write-Host You have not entered the string in proper format use format win-ma-y.
+$in=Read-Host "Enter the string"
+}
+}
+You have not entered the string in proper format use format win-ma-y.
+PS C:\Windows\system32> TerminatingError(): "The pipeline has been stopped."
+PS C:\Windows\system32> $b=$true
+While ($b)
+{
+$in=Read-Host "Enter the string"
+if ($in -match "^[a-z]{3}\-[a-z]{2}\-[a-z]{1}$")##"^[a-z]{3}-[a-z]{2}-[a-z]{1}$" without escape character also it works
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+$b=$false
+
+}
+
+else
+{
+
+Write-Host You have not entered the string in proper format use format win-ma-y.
+$b=Read-Host "Enter the string"
+}
+}
+You have not entered the string in proper format use format win-ma-y.
+Your input is accepted
+PS C:\Windows\system32> $b=$true
+While ($b)
+{
+$in=Read-Host "Enter the string"
+if ($in -match "^[a-z]{3}\-[a-z]{2}\-[a-z]{1}$")##"^[a-z]{3}-[a-z]{2}-[a-z]{1}$" without escape character also it works
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+$b=$false
+
+}
+
+else
+{
+
+Write-Host You have not entered the string in proper format use format win-ma-y.
+
+}
+}
+You have not entered the string in proper format use format win-ma-y.
+PS C:\Windows\system32> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Windows\system32> $b=$true
+While ($b)
+{
+$in=Read-Host "Enter the string"
+if ($in -match "^[a-z]{3}\-[a-z]{2}\-[a-z]{1}$")##"^[a-z]{3}-[a-z]{2}-[a-z]{1}$" without escape character also it works
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+$b=$false
+
+}
+
+else
+{
+
+Write-Host You have not entered the string in proper format use format win-ma-y.
+
+}
+}
+
+PS C:\Windows\system32> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Windows\system32> $b=$true
+While ($b)
+{
+$in=Read-Host "Enter the string"
+if ($in -match "^[a-z]{3}\-[a-z]{2}\-[a-z]{1}$")##"^[a-z]{3}-[a-z]{2}-[a-z]{1}$" without escape character also it works
+{
+
+Write-Host Your input is accepted -ForegroundColor Green
+$b=$false
+
+}
+
+else
+{
+
+Write-Host You have not entered the string in proper format use format win-ma-y.
+
+}
+}
+
+You have not entered the string in proper format use format win-ma-y.
+You have not entered the string in proper format use format win-ma-y.
+You have not entered the string in proper format use format win-ma-y.
+Your input is accepted
+PS C:\Windows\system32> $azurevm= New-Object System.Object
+$azurevm |Add-Member -MemberType NoteProperty -Name "Name" -Value "MyVm"
+$azurevm |Add-Member -MemberType NoteProperty -Name "Status" -Value "Running"
+
+PS C:\Windows\system32> $azurevm
+
+Name Status
+---- ------
+MyVm Running
+
+
+PS C:\Windows\system32> $string | Get-Member
+Get-Member : You must specify an object for the Get-Member cmdlet.
+At line:1 char:11
++ $string | Get-Member
++           ~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Get-Member], InvalidOperationException
+    + FullyQualifiedErrorId : NoObjectInGetMember,Microsoft.PowerShell.Commands.GetMemberCommand
+Get-Member : You must specify an object for the Get-Member cmdlet.
+At line:1 char:11
++ $string | Get-Member
++           ~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Get-Member], InvalidOperationException
+    + FullyQualifiedErrorId : NoObjectInGetMember,Microsoft.PowerShell.Commands.GetMemberCommand
+
+PS C:\Windows\system32> $string="test"
+PS C:\Windows\system32> string
+string : The term 'string' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ string
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (string:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+string : The term 'string' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try
+again.
+At line:1 char:1
++ string
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (string:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Windows\system32> $c="test"
+PS C:\Windows\system32> $c|gt
+gt : The term 'gt' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:4
++ $c|gt
++    ~~
+    + CategoryInfo          : ObjectNotFound: (gt:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+gt : The term 'gt' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:4
++ $c|gt
++    ~~
+    + CategoryInfo          : ObjectNotFound: (gt:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Windows\system32> $c|Get-Member
+
+
+   TypeName: System.String
+
+Name             MemberType            Definition
+----             ----------            ----------
+Clone            Method                System.Object Clone(), System.Object ICloneable.Clone()
+CompareTo        Method                int CompareTo(System.Object value), int CompareTo(string strB), int IComparable.CompareTo(System.Object obj), int IComparable[string].CompareTo(string other)
+Contains         Method                bool Contains(string value)
+CopyTo           Method                void CopyTo(int sourceIndex, char[] destination, int destinationIndex, int count)
+EndsWith         Method                bool EndsWith(string value), bool EndsWith(string value, System.StringComparison comparisonType), bool EndsWith(string value, bool ignoreCase, cultureinfo culture)
+Equals           Method                bool Equals(System.Object obj), bool Equals(string value), bool Equals(string value, System.StringComparison comparisonType), bool IEquatable[string].Equals(string other)
+GetEnumerator    Method                System.CharEnumerator GetEnumerator(), System.Collections.IEnumerator IEnumerable.GetEnumerator(), System.Collections.Generic.IEnumerator[char] IEnumerable[char].GetEnumer...
+GetHashCode      Method                int GetHashCode()
+GetType          Method                type GetType()
+GetTypeCode      Method                System.TypeCode GetTypeCode(), System.TypeCode IConvertible.GetTypeCode()
+IndexOf          Method                int IndexOf(char value), int IndexOf(char value, int startIndex), int IndexOf(char value, int startIndex, int count), int IndexOf(string value), int IndexOf(string value, ...
+IndexOfAny       Method                int IndexOfAny(char[] anyOf), int IndexOfAny(char[] anyOf, int startIndex), int IndexOfAny(char[] anyOf, int startIndex, int count)
+Insert           Method                string Insert(int startIndex, string value)
+IsNormalized     Method                bool IsNormalized(), bool IsNormalized(System.Text.NormalizationForm normalizationForm)
+LastIndexOf      Method                int LastIndexOf(char value), int LastIndexOf(char value, int startIndex), int LastIndexOf(char value, int startIndex, int count), int LastIndexOf(string value), int LastIn...
+LastIndexOfAny   Method                int LastIndexOfAny(char[] anyOf), int LastIndexOfAny(char[] anyOf, int startIndex), int LastIndexOfAny(char[] anyOf, int startIndex, int count)
+Normalize        Method                string Normalize(), string Normalize(System.Text.NormalizationForm normalizationForm)
+PadLeft          Method                string PadLeft(int totalWidth), string PadLeft(int totalWidth, char paddingChar)
+PadRight         Method                string PadRight(int totalWidth), string PadRight(int totalWidth, char paddingChar)
+Remove           Method                string Remove(int startIndex, int count), string Remove(int startIndex)
+Replace          Method                string Replace(char oldChar, char newChar), string Replace(string oldValue, string newValue)
+Split            Method                string[] Split(Params char[] separator), string[] Split(char[] separator, int count), string[] Split(char[] separator, System.StringSplitOptions options), string[] Split(c...
+StartsWith       Method                bool StartsWith(string value), bool StartsWith(string value, System.StringComparison comparisonType), bool StartsWith(string value, bool ignoreCase, cultureinfo culture)
+Substring        Method                string Substring(int startIndex), string Substring(int startIndex, int length)
+ToBoolean        Method                bool IConvertible.ToBoolean(System.IFormatProvider provider)
+ToByte           Method                byte IConvertible.ToByte(System.IFormatProvider provider)
+ToChar           Method                char IConvertible.ToChar(System.IFormatProvider provider)
+ToCharArray      Method                char[] ToCharArray(), char[] ToCharArray(int startIndex, int length)
+ToDateTime       Method                datetime IConvertible.ToDateTime(System.IFormatProvider provider)
+ToDecimal        Method                decimal IConvertible.ToDecimal(System.IFormatProvider provider)
+ToDouble         Method                double IConvertible.ToDouble(System.IFormatProvider provider)
+ToInt16          Method                int16 IConvertible.ToInt16(System.IFormatProvider provider)
+ToInt32          Method                int IConvertible.ToInt32(System.IFormatProvider provider)
+ToInt64          Method                long IConvertible.ToInt64(System.IFormatProvider provider)
+ToLower          Method                string ToLower(), string ToLower(cultureinfo culture)
+ToLowerInvariant Method                string ToLowerInvariant()
+ToSByte          Method                sbyte IConvertible.ToSByte(System.IFormatProvider provider)
+ToSingle         Method                float IConvertible.ToSingle(System.IFormatProvider provider)
+ToString         Method                string ToString(), string ToString(System.IFormatProvider provider), string IConvertible.ToString(System.IFormatProvider provider)
+ToType           Method                System.Object IConvertible.ToType(type conversionType, System.IFormatProvider provider)
+ToUInt16         Method                uint16 IConvertible.ToUInt16(System.IFormatProvider provider)
+ToUInt32         Method                uint32 IConvertible.ToUInt32(System.IFormatProvider provider)
+ToUInt64         Method                uint64 IConvertible.ToUInt64(System.IFormatProvider provider)
+ToUpper          Method                string ToUpper(), string ToUpper(cultureinfo culture)
+ToUpperInvariant Method                string ToUpperInvariant()
+Trim             Method                string Trim(Params char[] trimChars), string Trim()
+TrimEnd          Method                string TrimEnd(Params char[] trimChars)
+TrimStart        Method                string TrimStart(Params char[] trimChars)
+Chars            ParameterizedProperty char Chars(int index) {get;}
+Length           Property              int Length {get;}
+
+
+PS C:\Windows\system32> $users= New-Object System.Object
+$users | Add-Member -MemberType NoteProperty -Name "fname" -Value "Kundan"
+$users | Add-Member -MemberType NoteProperty -Name "lname" -Value "Patil"
+$users | Add-Member -MemberType ScriptMethod -Name "SammaccountName" -Value {"$($this.fname).substring (0,1)"+ "$this.lname"}
+PS C:\Windows\system32> $users
+
+fname  lname
+-----  -----
+Kundan Patil
+
+
+PS C:\Windows\system32> $users|Get-Member
+
+
+   TypeName: System.Object
+
+Name            MemberType   Definition
+----            ----------   ----------
+Equals          Method       bool Equals(System.Object obj)
+GetHashCode     Method       int GetHashCode()
+GetType         Method       type GetType()
+ToString        Method       string ToString()
+fname           NoteProperty string fname=Kundan
+lname           NoteProperty string lname=Patil
+SammaccountName ScriptMethod System.Object SammaccountName();
+
+
+PS C:\Windows\system32> $users.SammaccountName()
+Kundan.substring (0,1)System.Object.lname
+PS C:\Windows\system32> $users | Add-Member -MemberType ScriptMethod -Name "SammaccountName" -Value {"$($($this.fname).substring(0,1))"+ "$($this.lname)"}
+Add-Member : Cannot add a member with the name "SammaccountName" because a member with that name already exists. To 
+overwrite the member anyway, add the Force parameter to your command.
+At line:1 char:10
++ $users | Add-Member -MemberType ScriptMethod -Name "SammaccountName"  ...
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Object:PSObject) [Add-Member], InvalidOperationException
+    + FullyQualifiedErrorId : MemberAlreadyExists,Microsoft.PowerShell.Commands.AddMemberCommand
+Add-Member : Cannot add a member with the name "SammaccountName" because a member with that name already exists. To overwrite the member anyway, add the Force parameter to your command.
+At line:1 char:10
++ $users | Add-Member -MemberType ScriptMethod -Name "SammaccountName"  ...
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Object:PSObject) [Add-Member], InvalidOperationException
+    + FullyQualifiedErrorId : MemberAlreadyExists,Microsoft.PowerShell.Commands.AddMemberCommand
+
+PS C:\Windows\system32> $users | Add-Member -MemberType ScriptMethod -Name "SammaccountName" -Value {"$($($this.fname).substring(0,1))"+ "$($this.lname)"} -Force
+PS C:\Windows\system32> $users|Get-Member
+
+
+   TypeName: System.Object
+
+Name            MemberType   Definition
+----            ----------   ----------
+Equals          Method       bool Equals(System.Object obj)
+GetHashCode     Method       int GetHashCode()
+GetType         Method       type GetType()
+ToString        Method       string ToString()
+fname           NoteProperty string fname=Kundan
+lname           NoteProperty string lname=Patil
+SammaccountName ScriptMethod System.Object SammaccountName();
+
+
+PS C:\Windows\system32> $users.SammaccountName()
+KPatil
+PS C:\Windows\system32> $Adusers=@()
+
+$users.fname"Ravi"
+$users.lname="Patil"
+$Adusers+=$users
+At line:3 char:13
++ $users.fname"Ravi"
++             ~~~~~~
+Unexpected token '"Ravi"' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+
+PS C:\Windows\system32> $Adusers+=$users
+PS C:\Windows\system32> $Adusers
+
+fname  lname
+-----  -----
+Kundan Patil
+
+
+PS C:\Windows\system32> $users.fname"Ravi"
+At line:1 char:13
++ $users.fname"Ravi"
++             ~~~~~~
+Unexpected token '"Ravi"' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+
+PS C:\Windows\system32> $users.fname="Ravi"
+PS C:\Windows\system32> $users.lname="Patil"
+PS C:\Windows\system32> $Adusers+=$users
+Method invocation failed because [System.Object] does not contain a method named 'op_Addition'.
+At line:1 char:1
++ $Adusers+=$users
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (op_Addition:String) [], RuntimeException
+    + FullyQualifiedErrorId : MethodNotFound
+Method invocation failed because [System.Object] does not contain a method named 'op_Addition'.
+At line:1 char:1
++ $Adusers+=$users
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (op_Addition:String) [], RuntimeException
+    + FullyQualifiedErrorId : MethodNotFound
+
+PS C:\Windows\system32> $Adusers=@()
+
+$users.fname="Ravi"
+$users.lname="Patil"
+$Adusers+=$users
+PS C:\Windows\system32> $Adusers
+
+fname lname
+----- -----
+Ravi  Patil
+
+
+PS C:\Windows\system32> 
+$users.fname="Kundan"
+$users.lname="Patil"
+$Adusers+=$users
+PS C:\Windows\system32> $Adusers
+
+fname  lname
+-----  -----
+Kundan Patil
+Kundan Patil
+
+
+PS C:\Windows\system32> $users.fname="Ravi"
+$users.lname="Patil"
+$Adusers+=$users
+PS C:\Windows\system32> $Adusers
+
+fname lname
+----- -----
+Ravi  Patil
+Ravi  Patil
+Ravi  Patil
+
+
+PS C:\Windows\system32> $users.fname="Ravi"
+$users.lname="Patil"
+$Adusers+=$users
+
+$users.fname="Kundan"
+$users.lname="Patil"
+$Adusers+=$users
+PS C:\Windows\system32> $Adusers
+
+fname  lname
+-----  -----
+Kundan Patil
+Kundan Patil
+Kundan Patil
+Kundan Patil
+Kundan Patil
+
+
+PS C:\Windows\system32> $users.fname="Kundan"
+$users.lname="Patil"
+$Adusers.Add($users)
+Exception calling "Add" with "1" argument(s): "Collection was of a fixed size."
+At line:3 char:1
++ $Adusers.Add($users)
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : NotSupportedException
+Exception calling "Add" with "1" argument(s): "Collection was of a fixed size."
+At line:3 char:1
++ $Adusers.Add($users)
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : NotSupportedException
+
+PS C:\Windows\system32> $users.fname="Kundan"
+$users.lname="Patil"
+$Adusers.Insert($users)
+Cannot find an overload for "Insert" and the argument count: "1".
+At line:3 char:1
++ $Adusers.Insert($users)
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodCountCouldNotFindBest
+Cannot find an overload for "Insert" and the argument count: "1".
+At line:3 char:1
++ $Adusers.Insert($users)
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodCountCouldNotFindBest
+
+PS C:\Windows\system32> $Adusers
+
+fname  lname
+-----  -----
+Kundan Patil
+Kundan Patil
+Kundan Patil
+Kundan Patil
+Kundan Patil
+
+
