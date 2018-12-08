@@ -232,4 +232,63 @@ new-item -ItemType file -Path C:\Users\VMware\Documents\WindowsPowerShell\Micros
 
 ########################################################################################################
 
+## Another way of creating the object
 
+##defining our own classess
+
+Get-Help about_class -ShowWindow
+
+###
+
+Class Vm{
+
+        $Name
+
+        [String]status(){
+          
+                return "stopped"
+            }
+
+    }
+
+
+
+
+
+##############################################################################################################
+#Psremoting
+
+Enter-PSSession
+Invoke-Command
+#Ps sesseion port
+#5985- plain text(HTTP)
+#5986- Ssl (HTTPS)
+ 
+
+$psop=New-PSSessionOption -SkipCACheck
+Enter-PSSession -ComputerName ntms_pc4 -Credential $crd -UseSSL -Port 5986 -SessionOption $psop 
+
+$crd= Get-Credential
+
+Enable-PSRemoting -Verbose
+$comp=$env:COMPUTERNAME
+
+New-SelfSignedCertificate -FriendlyName $comp -DnsName $comp
+
+
+Get-PSProvidep 
+New-Item -path WSMan:\localhost\Listener -Transport HTTPS -Address * -CertificateThumbPrint BB24128B0895314C1E617710E25EBA6BD4FD528C ##ading the https listner for winrm
+Get-Item -Path WSMan:\localhost\Client\TrustedHosts
+Set-Item -Path WSMan:\localhost\Client\TrustedHosts -Value 192.168.1.10 -Concatenate ##adding the trusted IP in the list
+
+$ser=@("BITS","ALG")
+
+Invoke-Command -ComputerName NTMS_PC4 -ScriptBlock {get-service -name $args[0,1]} -UseSSL -Port 5986 -SessionOption $psop -Credential $crd -ArgumentList $ser
+
+New-PSSession -ComputerName NTMSPC-9 -Credential $crd -UseSSL -Port 5986 -SessionOption $psop
+
+##Another way to invoke the things form remote machine, this is availble only after 3.0
+
+
+Invoke-Command -ComputerName NTMS_PC4 -ScriptBlock {get-service -name $using:ser} -UseSSL -Port 5986 -SessionOption $psop -Credential $crd
+ 
