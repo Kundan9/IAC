@@ -240,17 +240,26 @@ Get-Help about_class -ShowWindow
 
 ###
 
-Class Vm{
+Class User{
 
-        $Name
+        [String]$FName
+        [String]$LName
 
-        [String]status(){
+        [String]Getfullname(){
           
-                return "stopped"
+                return "$($($this.FName).substring(0,1))"+"$($this.LName)"
             }
 
-    }
+}
 
+$user=New-Object -TypeName User
+$user.FName="Dinesh"
+$user.LName="Patil"
+$user.Getfullname()
+ 
+$user | Export-Csv -Path C:\Kundan\sam.csv -Append 
+
+$FName | Get-Member
 
 
 
@@ -291,4 +300,86 @@ New-PSSession -ComputerName NTMSPC-9 -Credential $crd -UseSSL -Port 5986 -Sessio
 
 
 Invoke-Command -ComputerName NTMS_PC4 -ScriptBlock {get-service -name $using:ser} -UseSSL -Port 5986 -SessionOption $psop -Credential $crd
+
+
+## IP match 
+ 192.168.2.2 -match "\b((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\b"
+
+ ##############################################################################################################################
+
+ ##Modules
+
+ $env:PSModulePath ## to get the module path
+ Find-Module *bit*
+ Get-Module -ListAvailable
+ Install-Module -Name BitTitan.Runbooks.Csv
+ Get-Command -Module BitTitan.Runbooks.Csv
+ Get-Module -ListAvailable | Update-Module
+
+ Save-Module -Name BitTitan.Runbooks.Csv -Path c:\Module
+ Get-Module -Name BitTitan.Runbooks.Csv 
+
+#########################################################
+##Variable
+
+New-Variable -Name user -Value Kunda -Scope 
+
+Get-help about_scope -ShowWindow
+Clear-Variable -Name $tst #to clear the variable
+
+Get-Variable -Scope Global
+Get-Variable -Scope local
+
+$global:tst="Mysession"
+.\NewTextDocument.ps1
+
+##########
+$mytst="Test"
+&\NewTextDocument2.ps1
+& E:\NewTextDocument.ps1
+#####################################################################
+
+##JOb
+
+
+get-command -noun "*job*"
+
+Start-Job -ScriptBlock {Get-Service}
+Get-Job -Name Job1 | FL *
+Receive-Job -Name Job4 -Keep
+
+
+Start-Job -FilePath .\NewTextDocument.ps1 -Name "20sec"
+Start-Job -FilePath .\NewTextDocument2.ps1 -Name "60sec"
+
+Get-Job -Name 20sec | Wait-Job -Timeout 20
+Get-Job -Name 60sec | Wait-Job -Timeout 60
+
+$20sec= Get-Job -Name 20sec | Receive-Job
+$60sec= Get-Job -Name 60sec | Receive-Job
+
+################################
+
+Start-Job -ScriptBlock {Get-Service1} -Name Error
+
+if ($job.State -eq "Failed")
+{
+
+$job.childjobs[0].JobStateInfo.Reason | Out-File -FilePath C:\aa.txt
+
+}
+elseif ($job.State -eq "Completed")
+{
+
+Get-services
+
+}
+
+$job=Get-Job -Name Error
+
+$job | Get-Member
+$job.ChildJobs[0].JobStateInfo.Reason
  
+
+
+
