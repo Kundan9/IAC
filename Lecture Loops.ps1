@@ -901,6 +901,7 @@ Try
 {
 
 Test-Connection -ComputerName kundan -ErrorAction stop
+#Get-Service -Name Kundan -ErrorAction SilentlyContinue
 
 }
 Catch
@@ -908,14 +909,149 @@ Catch
 
 Write-Host "Error occroured $($_)"
 
-$_.categoryinfo.reason
+$_.categoryinfo
+$_.exception
 
 }
 
-#.net, internet task, module is pending in powershell.
+#.net, internet task, module is pending in powershell. peding topic.
+
+############################################################################
+
+#How to write Help, if you are using the single function in the script then dfine like beloe example, but if you have multiple fuction in script then you have to mention the help in fuction code block
+
+<#
+.Synopsis
+   This Code is do the operation on intergers
+.DESCRIPTION
+   Test
+.EXAMPLE
+   Ex.1
+.EXAMPLE
+   Another example of how to use this cmdlet
+.INPUTS
+   Inputs to this cmdlet (if any)
+.OUTPUTS
+   Output from this cmdlet (if any)
+.NOTES
+   General notes
+.COMPONENT
+   The component this cmdlet belongs to
+.ROLE
+   The role this cmdlet belongs to
+.FUNCTIONALITY
+   The functionality that best describes this cmdlet
+#>
+function Verb-Noun
+{
+    [CmdletBinding(DefaultParameterSetName='Parameter Set 1', 
+                  SupportsShouldProcess=$true, 
+                  PositionalBinding=$false,
+                  HelpUri = 'http://www.microsoft.com/',
+                  ConfirmImpact='Medium')]
+    [Alias()]
+    [OutputType([String])]
+    Param
+    (
+        # Param1 help description
+        [Parameter(Mandatory=$true, 
+                   ValueFromPipeline=$true,
+                   ValueFromPipelineByPropertyName=$true, 
+                   ValueFromRemainingArguments=$false, 
+                   Position=0,
+                   ParameterSetName='Parameter Set 1')]
+        [ValidateNotNull()]
+        [ValidateNotNullOrEmpty()]
+        [ValidateCount(0,5)]
+        [ValidateSet("sun", "moon", "earth")]
+        [Alias("p1")] 
+        $Param1,
+
+        # Param2 help description
+        [Parameter(ParameterSetName='Parameter Set 1')]
+        [AllowNull()]
+        [AllowEmptyCollection()]
+        [AllowEmptyString()]
+        [ValidateScript({$true})]
+        [ValidateRange(0,5)]
+        [int]
+        $Param2,
+
+        # Param3 help description
+        [Parameter(ParameterSetName='Another Parameter Set')]
+        [ValidatePattern("[a-z]*")]
+        [ValidateLength(0,15)]
+        [String]
+        $Param3
+    )
+
+    Begin
+    {
+    }
+    Process
+    {
+        if ($pscmdlet.ShouldProcess("Target", "Operation"))
+        {
+        }
+    }
+    End
+    {
+    }
+}
  
+####################################################################################################################
 
+##Define Verbose in your script
 
+function get-azurevm1
+{
+
+[cmdletbinding()]
+    
+    Param (
+    
+            $vmname,
+            $Region
+    
+    
+    )
+
+    begin {Write-Host "Starting"}
+    process {
+    Write-Verbose "Typing Hi"
+    Write-Host "Hi"}
+    end {Write-Host "Ending"}
+
+  }
+
+###############################################################################################
+
+#Debug
+
+function get-azurevm1
+{
+
+[cmdletbinding()]
+    
+    Param (
+    
+            $vmname,
+            $Region
+    
+    
+    )
+
+    begin {Write-Host "Starting"}
+    process {
+    Write-Debug "Typing Hi"
+    Write-Host "Hi"}
+    end {Write-Host "Ending"}
+
+  }
+ 
+################################################################################################
+
+#Module-
 
 
 
