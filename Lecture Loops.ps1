@@ -1051,7 +1051,18 @@ function get-azurevm1
  
 ################################################################################################
 
-#Module-
+#Modules-
+
+
+New-ModuleManifest -Path "C:\Kundan\IAC-master\IAC-master\error.psd1" -PowerShellVersion 4.0 -CompanyName NTMS -Copyright "(c) 2019 Kundan. All rights reserved" -FunctionsToExport * -RootModule error.psm1
+
+Get-Module -ListAvailable
+Import-Module -Name error -Force
+
+Get-Command -Module error
+get-azurevm1
+
+
 
 
 
