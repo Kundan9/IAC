@@ -3,7 +3,9 @@
  host: All
  gather_facts: true
  task:
-  serviceneedtostop: Bits
+  win_service:
+   name:Bits
+   state:stop
 ...
   
   
