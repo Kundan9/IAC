@@ -1,0 +1,18 @@
+---
+-
+  hosts: All
+  gather_facts: true
+  tasks: 
+   - name: get service
+     win_service:
+      name: Service name
+     register: allservices
+   - name: get all services starting with win
+     dubug: 
+     msg: > 
+          Below are teh win services
+          {%for display_name in {{allservices}} -%}
+                display_name == *win*
+          {%endfor -%}        
+     
+...
