@@ -6,7 +6,7 @@
    - name: get service
      win_service:
       name: "*"
-     register: allservices
+      register: allservices
    - name: get all services starting with win
      dubug: 
      msg: > 
