@@ -5,7 +5,7 @@
   tasks: 
    - name: get service
      win_service:
-      name: Service name
+      name: *
      register: allservices
    - name: get all services starting with win
      dubug: 
