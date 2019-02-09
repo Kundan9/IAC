@@ -2,10 +2,10 @@
 -
  hosts: All
  gather_facts: true
- task:
+ tasks:
   win_service:
    name:Bits
-   state:stop
+   state:stopped
 ...
   
   
