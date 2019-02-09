@@ -1,0 +1,9 @@
+---
+-
+ host: All
+ gather_facts: true
+ task:
+  serviceneedtostop: Bits
+...
+  
+  
