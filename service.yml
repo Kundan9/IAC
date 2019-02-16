@@ -1,8 +1,8 @@
 ---
 -
-  hosts: all
-  gather_facts: true
-  tasks:
+ hosts: all
+ gather_facts: true
+ tasks:
     win_service:
       name: bits
       state: stopped
