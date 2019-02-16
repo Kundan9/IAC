@@ -1,6 +1,6 @@
 ---
 -
-  hosts: All
+  hosts: all
   gather_facts: true
   tasks: 
     win_service: 
