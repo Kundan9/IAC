@@ -4,7 +4,7 @@
   gather_facts: true
   tasks:
     win_service:
-      name: Bits
+      name: bits
       state: stopped
 ...
   
